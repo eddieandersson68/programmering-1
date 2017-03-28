@@ -1,0 +1,6 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Uppdrag 1\bin\Debug\Uppdrag 1.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Uppdrag 1\obj\Debug\Uppdrag 1.csprojResolveAssemblyReference.cache
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Uppdrag 1\bin\Debug\Uppdrag 1.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Uppdrag 1\bin\Debug\Uppdrag 1.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Uppdrag 1\obj\Debug\Uppdrag 1.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Uppdrag 1\obj\Debug\Uppdrag 1.pdb
