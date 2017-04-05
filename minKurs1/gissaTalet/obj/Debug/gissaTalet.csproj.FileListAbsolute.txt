@@ -1,0 +1,6 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\gissaTalet\bin\Debug\gissaTalet.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\gissaTalet\bin\Debug\gissaTalet.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\gissaTalet\bin\Debug\gissaTalet.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\gissaTalet\obj\Debug\gissaTalet.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\gissaTalet\obj\Debug\gissaTalet.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\gissaTalet\obj\Debug\gissaTalet.csprojResolveAssemblyReference.cache

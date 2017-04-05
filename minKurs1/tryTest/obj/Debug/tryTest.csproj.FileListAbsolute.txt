@@ -1,0 +1,10 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\bin\Debug\tryTest.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\bin\Debug\tryTest.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\bin\Debug\tryTest.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\obj\Debug\tryTest.csprojResolveAssemblyReference.cache
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\obj\Debug\tryTest.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\obj\Debug\tryTest.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\obj\Debug\ActivityDesigner1.baml
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\obj\Debug\ActivityDesigner1.g.cs
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\obj\Debug\tryTest_MarkupCompile.cache
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\tryTest\obj\Debug\tryTest.g.resources

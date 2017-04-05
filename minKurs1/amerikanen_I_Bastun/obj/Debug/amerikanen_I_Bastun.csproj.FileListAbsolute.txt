@@ -1,0 +1,6 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\amerikanen_I_Bastun\bin\Debug\amerikanen_I_Bastun.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\amerikanen_I_Bastun\bin\Debug\amerikanen_I_Bastun.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\amerikanen_I_Bastun\bin\Debug\amerikanen_I_Bastun.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\amerikanen_I_Bastun\obj\Debug\amerikanen_I_Bastun.csprojResolveAssemblyReference.cache
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\amerikanen_I_Bastun\obj\Debug\amerikanen_I_Bastun.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\amerikanen_I_Bastun\obj\Debug\amerikanen_I_Bastun.pdb
