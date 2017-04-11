@@ -6,67 +6,144 @@ using System.Threading.Tasks;
 
 namespace tryTest
 {
+
+
+
+
+
+
+
+
     class Program
     {
-        static void Main(string[] args)
+        public static float MittKonto()
 
         {
-
-            int money = 0;
-            int uttag = 0;
-
-            Console.WriteLine("Välkommen till Banken: Gör ditt val? \n");
-            int val = int.Parse(Console.ReadLine());
-            switch (val)
+            float insättning = 0;
+            try
             {
-                case 1:
-                    Console.WriteLine("[I]nsättning {0} ");
-                    break;
+                return insättning = float.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("FEL vid inmatning" + ex.Message);
+                throw;
+            }
+        }
 
-                case 2:
-                    Console.WriteLine("[U]ttag {0} ");
-                    break;
+        static void Main(string[] args)
+        {
 
-                case 3:
-                    Console.WriteLine("[S]aldo {0} ");
-                    break;
+            /////////////////////////////////////////////////////////////////
+            // Bank Inte klart
+            while (true)
+            {
 
-                case 4:
-                    Console.WriteLine("[A]vsluta ");
-                    break;
-                default:
-                    Console.WriteLine("Invalid entry ");
-                    Console.WriteLine("Fel kommando ");
+                float pengar = 0;
+                float uttag = 0;
+                
+                float konto = 0;
+
+                Console.WriteLine("Välkommen till Banken: Gör ditt val? \n");
+                Console.WriteLine("[I]nsättning ");
+                Console.WriteLine("[U]ttag ");
+                Console.WriteLine("[S]aldo  ");
+                Console.WriteLine("[A]vsluta ");
+
+                string val = Console.ReadLine();
+
+                if (val == "I" || val == "i")
+                {
+                    Console.WriteLine("Skriv in hur mycket du vill sätta in? ");
+                    konto = MittKonto();
+                    Console.WriteLine("Du har {0} Kr på ditt konto ", konto);
+                }
+
+                
+                
+                     
+                    else if (val == "U" || val == "u")
+                {
+                    Console.WriteLine("Skriv in hur mycket du vill ta ut? ");
+                    continue;
+                }
+                else if (val == "S" || val == "s")
+                {
+                    Console.WriteLine("Så här mycket pengar har du på kontot ");
+                    continue;
+                }
+
+                else if (val == "A" || val == "a")
                     break;
 
             }
+            Console.ReadLine();
         }
-        public void Insättning(int money)
-        {
 
-        }
-        public void Uttag()
-        {
-
-        }
-        public void Saldo()
-        {
-
-        }
-        public void Avsluta()
-        {
-
-        }
     }
 }
 
 
 
-            //}
-            //}
-            //int a = 1;
-            //int b = 2;
-            //float c = a / b;
+
+/* int nr = int.Parse(Console.ReadLine());
+switch (nr)
+{
+ case 1:
+     Console.WriteLine("Skriv in hur mycket du vill sätta in? ");
+     break;
+
+ case 2:
+     Console.WriteLine("Skriv in hur mycket du vill ta ut? ");
+     break;
+
+ case 3:
+     Console.WriteLine("[S]aldo {0} ");
+     break;
+
+ case 4:
+     Console.WriteLine("[A]vsluta ");
+     break;
+     */
+//else
+//    Console.WriteLine("Invalid entry ");
+//    Console.WriteLine("Fel kommando, inte ett meny val ");
+
+
+
+
+
+
+////////////////////////////////////
+
+/*  public static void Insättning(int money)
+  {
+
+  }
+  public static void Uttag()
+  {
+
+  }
+  public static void Saldo()
+  {
+
+  }
+  public static void Avsluta()
+  {
+
+  }
+*/
+
+
+
+
+
+
+//}
+//}
+//int a = 1;
+//int b = 2;
+//float c = a / b;
 
 //float svar = Convert.float(c);
 //Console.WriteLine(svar);

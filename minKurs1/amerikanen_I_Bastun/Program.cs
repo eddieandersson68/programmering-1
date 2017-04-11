@@ -6,57 +6,104 @@ using System.Threading.Tasks;
 
 namespace amerikanen_I_Bastun
 {
-    class Program
+    class MyTemperature
     {
-        public static int FahrToCels(int fahr)
+        // Metod för att omvandla Farhrenheit till Celcius (float)
+        public static float FahrToCels(float fahr)
         {
-            //int x = 0;
-            //double Fahr;
-            //Fahr = (double)fahr;
-            // typomvandla farh till celcius
-            int cel = (fahr - 32) * 5 / 9;
-            return cel;
-            //double temp = Convert.ToDouble(cel);    
+            return ((fahr - 32.0f) / 9.0f) * 5.0f;
+
         }
+        // Metod för att generera ett slumptal
+        public static int GetRandomNr(int slumpTal)
+        {
 
-         public static void Main(string[] args)
+            Random rand = new Random();
+            return slumpTal = rand.Next(0, 168);
+          
+        }
+        /* Metod för att läsa in vad användaren skriver och om denne 
+         * inte skrivit in ett heltal kasta ett exeption, samt skicka vidare till metoden 
+         * för omvandling till Fahrenheit och få tillbaka värdet från den */
+        public static float GetTemparatureFromInput()
+        {
+            float fahrenheit = 0;
+            
+            try
             {
-                int temp = 0;
-                int grader = 0;
-                bool loop = true;
+                return fahrenheit = MyTemperature.FahrToCels(float.Parse(Console.ReadLine()));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Fel inmatning det där är inte ett heltal " + ex.Message);
+                throw;
+            }
+        }
+        
+    }
+    class Program
+    {   
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Välkommen till bastun ");
+            while (true)
+            {
+                //int fahrenheit;
+                float celsius = 0.0f;
+                int slumpTal = 0;
+                Console.Write("Skriv in ett tal i Fahrenheit: ");
 
-                Console.WriteLine("Skriv in ett tal i Fahrenheit ");
-                try
+                /* Läs in Fahrenheit, skicka till metod GetTemparatureFromInput konvertera till ett 
+                 * flyttal (float) = fahrenheit och lagra detta i celsius
+                */
+            try
                 {
-                    int fahrenheit = int.Parse(Console.ReadLine());
-                    int celcius = FahrToCels (fahrenheit);
-                    loop = false;
+                    celsius = MyTemperature.GetTemparatureFromInput();
+                    slumpTal = MyTemperature.GetRandomNr(slumpTal);
+                    
+                }
+                catch (Exception ex)
+                {
 
+                    continue;
                 }
-                catch
+
+                if (celsius == 0)
                 {
-                    Console.WriteLine("Fel inmatning det där är inte ett heltal ");
+                    //slumpTal = MyTemperature.GetRandomNr(slumpTal);
                 }
-                do
+
+                /* värdet på celsius kollas av mot olika villkor och beroende på vilket villkor som
+                 * uppfylls, så skrivs respektive text ut till användaren.
+                 */
+                else if (celsius < 73)
                 {
+                    Console.WriteLine("Det är inte varm nog, höj temperaturen {0} C° \n", Math.Round(celsius));
+                }
+                else if (celsius > 77)
+                {
+                    Console.WriteLine("Det är för varmt, öppna dörren {0} C° \n", Math.Round(celsius));
+                }
+                // Uppfylls detta villkor kastas man ut ur loopen.
+                else if (celsius > 73 && celsius < 77 && celsius != 75)
+                {
+                    Console.WriteLine("nu är det OK att basta {0} C° ", Math.Round(celsius));
+                    break;
+                }
+                // Uppfylls detta villkor kastas man ut ur loopen.
+                else if (celsius == 75)
+                {
+                    Console.WriteLine("Nu är det perfekt temeratur att basta \n Välkommen in i bastun ", Math.Round(celsius));
+                    break;
+                }
+                /* Denna har jag med bara för att visa att jag har en fungerade 
+                 * slumptalsmetod. Jag kom inte på hur jag skulle göra för att 
+                 * använda den till att kolla av villkoren för bastun*/
+                Console.WriteLine("SlumpTal {0}", (slumpTal)); 
                 
-                    grader = grader + temp;
-                    if (grader > 73)
-                    {
-                        Console.WriteLine("Det är inte varm nog, höj temperaturen ");
-                    }
-                    else if (grader < 77)
-                    {
-                        Console.WriteLine("Det är för varmt, öppna dörren ");
-                    }
-                    else if (grader > 73 && grader == 77)
-                    {
-                        Console.WriteLine("nu kan vi basta ");
-                    }
-                    Console.ReadLine();
-                }
-            while (loop);
-
+            }
+            Console.ReadKey(); // slut
         }
     }
 }
+

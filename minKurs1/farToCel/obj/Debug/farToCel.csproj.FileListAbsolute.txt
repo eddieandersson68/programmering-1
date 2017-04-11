@@ -1,0 +1,6 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\farToCel\bin\Debug\farToCel.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\farToCel\bin\Debug\farToCel.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\farToCel\bin\Debug\farToCel.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\farToCel\obj\Debug\farToCel.csprojResolveAssemblyReference.cache
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\farToCel\obj\Debug\farToCel.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\farToCel\obj\Debug\farToCel.pdb

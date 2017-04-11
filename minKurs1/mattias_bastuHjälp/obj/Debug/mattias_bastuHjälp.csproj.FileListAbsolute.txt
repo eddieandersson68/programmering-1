@@ -1,0 +1,6 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\mattias_bastuHjälp\bin\Debug\mattias_bastuHjälp.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\mattias_bastuHjälp\obj\Debug\mattias_bastuHjälp.csprojResolveAssemblyReference.cache
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\mattias_bastuHjälp\bin\Debug\mattias_bastuHjälp.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\mattias_bastuHjälp\bin\Debug\mattias_bastuHjälp.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\mattias_bastuHjälp\obj\Debug\mattias_bastuHjälp.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\mattias_bastuHjälp\obj\Debug\mattias_bastuHjälp.pdb

@@ -1,0 +1,6 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Bank\bin\Debug\Bank.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Bank\bin\Debug\Bank.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Bank\bin\Debug\Bank.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Bank\obj\Debug\Bank.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Bank\obj\Debug\Bank.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\Bank\obj\Debug\Bank.csprojResolveAssemblyReference.cache
