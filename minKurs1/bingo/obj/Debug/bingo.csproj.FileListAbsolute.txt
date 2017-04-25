@@ -1,0 +1,6 @@
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\bingo\bin\Debug\bingo.exe.config
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\bingo\bin\Debug\bingo.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\bingo\bin\Debug\bingo.pdb
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\bingo\obj\Debug\bingo.csprojResolveAssemblyReference.cache
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\bingo\obj\Debug\bingo.exe
+C:\Users\ssund\OneDrive\Dokument\Eddie\Programmering\programmering 1\minKurs1\bingo\obj\Debug\bingo.pdb

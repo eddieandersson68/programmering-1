@@ -6,14 +6,6 @@ using System.Threading.Tasks;
 
 namespace tryTest
 {
-
-
-
-
-
-
-
-
     class Program
     {
         public static float MittKonto()
