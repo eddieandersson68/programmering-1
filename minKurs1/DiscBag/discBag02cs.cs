@@ -9,7 +9,7 @@ namespace DiscBag
     class MinDiscBag
     {
 
-        private string [] discBag = new string[24]; //Jobbar ni med struct (ev betyg C) eller klass för soda (betyg A) så är det inte "string" som är datatyp här
+        private string[] discBag = new string[2]; //Jobbar ni med struct (ev betyg C) eller klass för soda (betyg A) så är det inte "string" som är datatyp här
         private int antal_discar = 0; //Håller reda på antal discar
         // En vektor för att hålla 5 olika typer av drivers 
         //int[] midrange = new int[5]; // == antalet discar som jag lagt till av denna typ
@@ -31,7 +31,7 @@ namespace DiscBag
                 Console.WriteLine("5. Skriv ut innehållet i din discbag");
                 Console.WriteLine("0. Avsluta programmet");
                 Console.WriteLine(" ");
-                int.TryParse(Console.ReadLine(),out meny);
+                int.TryParse(Console.ReadLine(), out meny);
                 switch (meny)
                 {
                     case 1:
@@ -62,9 +62,17 @@ namespace DiscBag
         }
         public void AddDisc()
         {
-            Console.WriteLine("Skriv namnet på den disc du vill lägga till \n");
-            discBag[antal_discar] = Console.ReadLine();
-            antal_discar++;
+            if (antal_discar < 2) 
+            {
+                Console.WriteLine("Skriv namnet på den disc du vill lägga till \n");
+                discBag[antal_discar] = Console.ReadLine();
+                antal_discar++; ////Lägg till disc
+            }
+            
+            else
+                Console.WriteLine("\n Discbagen är full!");
+
+
 
             //int temp = 0;
             //do
@@ -97,30 +105,45 @@ namespace DiscBag
         }
         public void AddDriver()
         {
-            
+
             //drivers[0] = new DiscDriver("Lattitude", "Driver", "Freedom", 169);
             //drivers[1] = new DiscDriver("Lattitude", "Driver", "Saint Pro", 189);
         }
         public void SubDisc()
         {
-            Console.WriteLine("vilken disk vill du ta bort? ");
-            discBag.Add= string name = (Console.ReadLine());  
-            if (discBag[0]= name)         
-            {
-                int indexToRemove = 0;
-                discBag = discBag.Where((source, index) => index != indexToRemove).ToArray();
-            }
-                //discBag[];
-                //antal_discar--;
-            }
+            //Console.WriteLine("vilken disk vill du ta bort? ");
+            //discBag.Add= string name = (Console.ReadLine());  
+            //if (discBag[0]= name)         
+            //{
+            int indexToRemove = 0;
+            discBag = discBag.Where((source, index) => index != indexToRemove).ToArray();
+            //}
+            //discBag[];
+            //antal_discar--;
+        }
         public void SwapDisc()
         {
             Console.WriteLine("Du bytte en disc");
         }
         public void PrintDiscbag()
         {
-            foreach (string temp in discBag)
-            Console.WriteLine(temp);
+            int count = 0;
+            foreach (string antal_discar in discBag)
+            {//För varje läsk plats i backen kollar vi,
+                if (antal_discar != null) count += 1; //Om det faktiskt är en läsk i backen och inte en tom plats.
+            }
+            foreach (string antal_discar in discBag)
+            {
+
+                Console.WriteLine("You have {0}  discs in your discbag.", antal_discar);
+            }
+            Console.WriteLine("You have {0} discs in your discbag.", count);
+            //Console.WriteLine("You have {0} discs in your discbag.", discBag.Length);
+
+
+
+            //foreach (string temp in discBag)
+            //Console.WriteLine(temp);
             //kod här
             //Missa inte hjälpkoden som finns i projektbeskrivningen
             //Där beskrivs hur man löser det med tomma positioner i vektorn
@@ -190,43 +213,43 @@ namespace DiscBag
             //int[] midrange = new int[5]; // == antalet discar som jag lagt till av denna typ
             //int[] putter = new int[5]; // == antalet discar som jag lagt till av denna typ
 
-           /* class DiscMidrange:Disc
-            {
-                private int[] midrange;
-                private string make;
-                private string type;
-                private string name;
-                private int price;
+            /* class DiscMidrange:Disc
+             {
+                 private int[] midrange;
+                 private string make;
+                 private string type;
+                 private string name;
+                 private int price;
 
-                public DiscMidrange(string Make, string Type, string Name, int Price)
-                {
-                    make = Make;
-                    Type = type;
-                    name = Name;
-                    price = Price;
-                    midrange = new int[5];
-                }
-                public string Make
-                {
-                    get { return make; }
-                    set { make = value; }
-                }
-                public string Type
-                {
-                    get { return type; }
-                    set { type = value; }
-                }
-                public string Name
-                {
-                    get { return name; }
-                    set { name = value; }
-                }
-                public int Price
-                {
-                    get { return price; }
-                    set { price = value; }
-                }
-            }*/
+                 public DiscMidrange(string Make, string Type, string Name, int Price)
+                 {
+                     make = Make;
+                     Type = type;
+                     name = Name;
+                     price = Price;
+                     midrange = new int[5];
+                 }
+                 public string Make
+                 {
+                     get { return make; }
+                     set { make = value; }
+                 }
+                 public string Type
+                 {
+                     get { return type; }
+                     set { type = value; }
+                 }
+                 public string Name
+                 {
+                     get { return name; }
+                     set { name = value; }
+                 }
+                 public int Price
+                 {
+                     get { return price; }
+                     set { price = value; }
+                 }
+             }*/
             //Här ska menyn ligga för att göra saker
             //Jag rekommenderar switch och case här med en loop
             //I del 1 av filmerna för slutprojektet kodar jag en switch case
