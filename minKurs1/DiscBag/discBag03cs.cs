@@ -201,6 +201,7 @@ namespace DiscBag
             //}
             Console.WriteLine("Du har {0}  discar i din discbag.", count);
             Console.WriteLine(discBag[0].ToString());
+            //Console.WriteLine(discBag[1].ToString());
             //Console.WriteLine("You have {0} discs in your discbag.", discBag.Length);
 
 
