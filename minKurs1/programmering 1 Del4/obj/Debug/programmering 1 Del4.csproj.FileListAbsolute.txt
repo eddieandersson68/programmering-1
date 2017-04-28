@@ -1,0 +1,8 @@
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\bin\Debug\programmering 1 Del4.exe.config
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\bin\Debug\programmering 1 Del4.exe
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\bin\Debug\programmering 1 Del4.pdb
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\obj\Debug\programmering 1 Del4.csprojResolveAssemblyReference.cache
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\obj\Debug\programmering 1 Del4.exe
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\obj\Debug\programmering 1 Del4.pdb
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\obj\Debug\programmering_1_Del4.Form1.resources
+C:\Users\Eddie\Documents\Visual Studio 2015\Projects\Min kurs1\programmering-1\minKurs1\programmering 1 Del4\obj\Debug\programmering 1 Del4.csproj.GenerateResource.Cache
