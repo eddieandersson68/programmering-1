@@ -8,11 +8,10 @@ namespace DiscBag
 {
     class MinDiscBag
     {
-       
-        const int ARRAY_SIZE = 2; // Ett konstant värde Så att jag bara har ett ställe att ändra på om jag behöver öa lr minska min vektor.
-        Disc[] discBag = new Disc[ARRAY_SIZE]; //Jobbar ni med struct (ev betyg C) eller klass för soda (betyg A) så är det inte "string" som är datatyp här
+        const int ARRAY_SIZE = 25; // Ett konstant värde Så att jag bara har ett ställe att ändra på om jag behöver öa lr minska min vektor.
+        private int[] discBag = new int[ARRAY_SIZE]; //Jobbar ni med struct (ev betyg C) eller klass för soda (betyg A) så är det inte "string" som är datatyp här
         private int antal_discar = 0; //Håller reda på antal discar
-        int sum = 0;
+
         // En vektor för att hålla 5 olika typer av drivers 
         //int[] midrange = new int[5]; // == antalet discar som jag lagt till av denna typ
         //int[] putter = new int[5]; // == antalet discar som jag lagt till av denna typ
@@ -128,15 +127,17 @@ namespace DiscBag
             //        antal_discar++;
             //        break;
             //    }
-            
+
             //}
         }
         public void AddDriver()
+
         {
-            if (antal_discar != 2)
+            DiscDriver Freedom = new DiscDriver(Lattitude_64, driver, Freedom, 169);
+            Console.WriteLine(Freedom);
+            if (antal_discar != 25)
             {
                 antal_discar++;
-
             }
             else
             {
@@ -145,10 +146,11 @@ namespace DiscBag
 
             for (int j = 0; j < discBag.Length; j++)
             {
-                discBag[j] = new Disc();
-                //discBag[j].Type = "freedom";
+                discBag[j] = antal_discar;
 
             }
+
+
             //for (int j = 0; j > discBag.Length; j++)
             //    if (antal_discar == 2)
             //    {
@@ -160,10 +162,8 @@ namespace DiscBag
             //        break;
             //    }
 
-            Driver d1 = new Driver();
-            Console.WriteLine(d1.ToString());
-            Driver d2 = new Driver();
-            Console.WriteLine(d2.ToString());
+            //Driver freedom = new Driver();
+            //Console.WriteLine(Freedom.ToString());
             //Driver Lat = new Driver();
             //Console.WriteLine("Lattitude 64, Driver, Freedom, 169kr");
             //drivers[0] = new DiscDriver("Lattitude", "Driver", "Freedom", 169);
@@ -191,17 +191,16 @@ namespace DiscBag
         public void PrintDiscbag()
         {
             int count = 0;
-            //foreach (int antal_discar in discBag) //För varje disc plats i bagen kollar vi,
+            foreach (int antal_discar in discBag) //För varje disc plats i bagen kollar vi,
             {
                 if (antal_discar != 0) count += 1; //Om det faktiskt är en disc i bagen och inte en tom plats.
             }
             //foreach (int antal_discar in discBag)
             //{
-            //Console.WriteLine("Du har {0} discs i din discbag.", antal_discar);
+            Console.WriteLine("Du har en {0}  discs i din discbag.", antal_discar);
             //}
             Console.WriteLine("Du har {0}  discar i din discbag.", count);
             Console.WriteLine(discBag[0].ToString());
-            //Console.WriteLine(discBag[1].ToString());
             //Console.WriteLine("You have {0} discs in your discbag.", discBag.Length);
 
 
@@ -214,9 +213,7 @@ namespace DiscBag
         }
         public void CalcDiscs()
         {
-          
-                    
-            
+
             //Console.WriteLine("Räkna ut totalsumman av alla diskar "+ disc.price + disc. );
             //kod här
             //Tänk på att inte räkna med tomma positioner i vektorn
@@ -236,10 +233,8 @@ namespace DiscBag
             //Det är mycket svårt att sortera efter bokstavsordning - är inte flaskorna egna objekt utan bara strängar...
             //... går det bra att sortera efter längden på namnet istället. 
         }
-
-
         // Abstract class för discar.
-        public class Disc
+        public abstract class Disc
         {
             ////private disc[] drivers;
             protected string make;
@@ -267,32 +262,41 @@ namespace DiscBag
                 get { return price; }
                 set { price = value; }
             }
-            public Disc()
-            {
-                Make = "Lattitude";
-                Type = "Driver";
-                Name = "Freedom";
-                Price = 169;
-            }
+            //public Disc()
+            //{
+            //    Make = "Lattitude";
+            //    Type = "Driver";
+            //    Name = "Freedom";
+            //    Price = 169;
+            //}
 
-            public override string ToString()
-            {
+            //public override string ToString()
+            //{
 
-                string text = null;
-                text += "\nTillverkare " + Make;
-                text += "\nNamn " + Name;
-                text += "\nTyp " + Type;
-                text += "\nPris kr " + price;
-                return text;
-            }
+            //    string text = null;
+            //    text += "\nTillverkare " + Make;
+            //    text += "\nNamn " + Name;
+            //    text += "\nTyp " + Type;
+            //    text += "\nPris kr " + price; 
+            //    return text;
+            //}
 
             ///////////////// Konstruktor för en ny disc av typen driver ////////////
-            public Disc(string Make, string Type, string Name, int Price)
+            protected Disc(string Make, string Type, string Name, int Price)
             {
-
+                Console.WriteLine("Basklass");
             }
 
         }
+        class DiscDriver : Disc
+        {
+            public DiscDriver(string Lattitude_64, string driver, string Freedom, int pris ) : base(Lattitude_64, driver, Freedom, 169)
+            {
+            Console.WriteLine("Ärvande klass");
+            }
+
+        }
+
         //make = Make;
         //    Type = type;
         //    name = Name;
@@ -306,71 +310,68 @@ namespace DiscBag
         //    //    drivers[1] = new Disc("Lattitude", "Driver", "Saint Pro", 189);
         //    //}
         //}
-        public class Driver : Disc
-        {
 
-
-        }
-        //public Driver() : base("Lattitude 64", "Driver", "Freedom", 169)
-        //{
-
-
-
-
-
-        // public properties skrivs med Pascal case eller _name
-
-        //int[] driver = new int[5]; // En vektor för att hålla 5 olika typer av drivers 
-        //int[] midrange = new int[5]; // == antalet discar som jag lagt till av denna typ
-        //int[] putter = new int[5]; // == antalet discar som jag lagt till av denna typ
-
-        /* class DiscMidrange:Disc
-         {
-             private int[] midrange;
-             private string make;
-             private string type;
-             private string name;
-             private int price;
-
-             public DiscMidrange(string Make, string Type, string Name, int Price)
-             {
-                 make = Make;
-                 Type = type;
-                 name = Name;
-                 price = Price;
-                 midrange = new int[5];
-             }
-             public string Make
-             {
-                 get { return make; }
-                 set { make = value; }
-             }
-             public string Type
-             {
-                 get { return type; }
-                 set { type = value; }
-             }
-             public string Name
-             {
-                 get { return name; }
-                 set { name = value; }
-             }
-             public int Price
-             {
-                 get { return price; }
-                 set { price = value; }
-             }
-         }*/
-        //Här ska menyn ligga för att göra saker
-        //Jag rekommenderar switch och case här med en loop
-        //I del 1 av filmerna för slutprojektet kodar jag en switch case
-        /*Metod för att lägga till en disc
-        Om ni har information om både pris, läsktyp och namn
-        kan det vara läge att presentera en meny här där man kan
-        välja på förutbestämda läskflaskor. Då kan man också rätt enkelt
-        göra ett val för att fylla läskbacken med slumpade flaskor
-        */
     }
+    //public Driver() : base("Lattitude 64", "Driver", "Freedom", 169)
+    //{
+
+
+
+
+
+    // public properties skrivs med Pascal case eller _name
+
+    //int[] driver = new int[5]; // En vektor för att hålla 5 olika typer av drivers 
+    //int[] midrange = new int[5]; // == antalet discar som jag lagt till av denna typ
+    //int[] putter = new int[5]; // == antalet discar som jag lagt till av denna typ
+
+    /* class DiscMidrange:Disc
+     {
+         private int[] midrange;
+         private string make;
+         private string type;
+         private string name;
+         private int price;
+
+         public DiscMidrange(string Make, string Type, string Name, int Price)
+         {
+             make = Make;
+             Type = type;
+             name = Name;
+             price = Price;
+             midrange = new int[5];
+         }
+         public string Make
+         {
+             get { return make; }
+             set { make = value; }
+         }
+         public string Type
+         {
+             get { return type; }
+             set { type = value; }
+         }
+         public string Name
+         {
+             get { return name; }
+             set { name = value; }
+         }
+         public int Price
+         {
+             get { return price; }
+             set { price = value; }
+         }
+     }*/
+    //Här ska menyn ligga för att göra saker
+    //Jag rekommenderar switch och case här med en loop
+    //I del 1 av filmerna för slutprojektet kodar jag en switch case
+    /*Metod för att lägga till en disc
+    Om ni har information om både pris, läsktyp och namn
+    kan det vara läge att presentera en meny här där man kan
+    välja på förutbestämda läskflaskor. Då kan man också rätt enkelt
+    göra ett val för att fylla läskbacken med slumpade flaskor
+    */
+
     class Program
     {
         public static void Main(string[] args)
@@ -378,6 +379,8 @@ namespace DiscBag
             //Skapar ett objekt av klassen DiscBag som heter minDiscbag
             var mindiscbag = new MinDiscBag();
             mindiscbag.Run();
+            
+
             Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
         }
