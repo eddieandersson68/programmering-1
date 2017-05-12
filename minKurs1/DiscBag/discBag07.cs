@@ -15,32 +15,29 @@ namespace MinDiscBag
         //        x[i] = 0;
         //}
         public int antal_discar = 0; //Håller reda på antal discar
-        // En vektor för att hålla 5 olika typer av drivers 
-        //int[] midrange = new int[5]; // == antalet discar som jag lagt till av denna typ
-        //int[] putter = new int[5]; // == antalet discar som jag lagt till av denna typ
-        //(Betyg A): En konstruktor kan ni använda för Sodacrate men det är inget krav.
-        //(Betyg A): Däremot ska ni använda en konstruktor för klassen "Soda"
-        //////////////////////////////////////////////////
-        //private bool menu = true;
         public void Run()
         {
-           
             int menu = 0; // variabel som håller read på vilket menyval som gjorts
             do
             {
                 Console.ResetColor();
                 //Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("\t");
+                //Console.WriteLine("\t");
                 Console.WriteLine("******************************************************************");
-                Console.WriteLine("\n" + "* Välkommen till din alldeles egna Discbags simulator     *");
-                Console.WriteLine("* var god välj ett alternativ                                    *\n");
-                Console.WriteLine("* 1. Lägg till en disc");
-                Console.WriteLine("* 2. Ta bort en disc");
-                Console.WriteLine("* 3. Byt ut en disc");
-                Console.WriteLine("* 4. Räkna ut det sammanlagda värdet av din discbag");
-                Console.WriteLine("* 5. Skriv ut innehållet i din discbag");
-                Console.WriteLine("* 6. Töm din discbag och börja om");
-                Console.WriteLine("* 0. Avsluta programmet");
+                Console.WriteLine("*                                                                *");
+                Console.WriteLine("* Välkommen till din alldeles egna Discbags simulator            *");
+                Console.WriteLine("*                                                                *");
+                Console.WriteLine("* var god välj ett alternativ                                    *");
+                Console.WriteLine("*                                                                *");
+                Console.WriteLine("* 1. Lägg till en disc                                           *");
+                Console.WriteLine("* 2. Ta bort en disc                                             *");
+                Console.WriteLine("* 3. Byt ut en disc                                              *");
+                Console.WriteLine("* 4. Räkna ut det sammanlagda värdet av din discbag              *");
+                Console.WriteLine("* 5. Skriv ut innehållet i din discbag                           *");
+                Console.WriteLine("* 6. Töm din discbag och börja om                                *");
+                Console.WriteLine("* 0. Avsluta programmet                                          *");
+                Console.WriteLine("*                                                                *");
+                Console.WriteLine("******************************************************************");
                 Console.WriteLine(" ");
                 int.TryParse(Console.ReadLine(), out menu);
                 //if (menu > 0 && menu < 5)
