@@ -10,6 +10,8 @@ namespace programmering_1_Del4
     {
 
         private string Name = "Eddie";
+        private string Name02 = "Andersson";
+
         public int Age = 49;
         public void ShowMessage(string Message)
         {
