@@ -247,23 +247,23 @@ namespace MinDiscBag
             //Console.WriteLine("Du bytte en disc");
         }
         //// Print Metod ////
-        public void PrintDiscbag()
+        public void PrintDiscbag() // Metod för att skriva ut innehållet i bagen.
         {
             int count = 0;
             for (int i = 0; i < discBag.Length; i++)
             {
-                if (discBag[i] != null)
+                if (discBag[i] != null) // OM INTE elementen i vektor är null GÖR detta.
                 {
                     Console.WriteLine("Index : {0} {1}", i, discBag[i]); // Skriver ut vad du lagt till i din bag.
                     count++;
                 }
-                else
+                else // Annars skriv ut detta.
                 {
                     Console.WriteLine("\nTom plats");
                 }
             }
-            Console.WriteLine("\nDu har {0} discar i din  discbag.", count);
-            Console.WriteLine("Du har {0} platser i din discbag.", discBag.Length);
+            Console.WriteLine("\nDu har {0} discar i din  discbag.", count); // Skiver ut antal discar i bagen.
+            Console.WriteLine("Du har {0} platser i din discbag.", discBag.Length); // Skriver ut antal platser i bagen.
         }
 
         public double CalcDiscs() // Metod för att räkna ut det samanlagda värdet av alla discar.
@@ -276,7 +276,7 @@ namespace MinDiscBag
                     Lägg ihop egenskapen price i varje element.*/
                     price += antal_discar.get_price(); // Lägger ihop väderdet av alla discar genom att kalla på varibeln get_price i klassen Disc.
             }
-            return price; // Returnera variablen price
+            return price; // Returnera variablen price.
         }
 
         public void EmptyDiscBag() // Metod för att tömma discbagen
