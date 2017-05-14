@@ -37,6 +37,7 @@ namespace MinDiscBag
                 Console.WriteLine("* 6. Töm din discbag och börja om                                *");
                 Console.WriteLine("* 0. Avsluta programmet                                          *");
                 Console.WriteLine("*                                                                *");
+                Console.WriteLine("*                                                                *");
                 Console.WriteLine("******************************************************************");
                 Console.WriteLine(" ");
                 int.TryParse(Console.ReadLine(), out menu);
